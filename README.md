@@ -180,3 +180,7 @@ No frontend is planned until the backend workflow is reliable and demonstrable t
 - The project is not production-ready or compliant with financial regulations.
 - Real card data, bank credentials, identity documents, and personal information must never be added.
 - Architecture documents describe intent; tests and runnable code provide implementation evidence.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
