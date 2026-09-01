@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FintechBackend.Api.Features.SystemStatus
 {
     [ApiController]
     [Route("api/v1/system")]
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
-    public class SystemStatusController: ControllerBase
+    public class SystemStatusController : ControllerBase
     {
         [HttpGet("status")]
         public ActionResult<SystemStatusResponse> GetStatus()
