@@ -1,6 +1,6 @@
 # Documentation Index
 
-This directory is the design source of truth for Fintech Backend Lab. The root `README.md` explains the learning journey; these documents define what the system is, why it is designed this way, and which rules implementation must preserve.
+This directory is the design source of truth for Fintech Backend Lab. The root `README.md` provides the project overview and local setup; these documents define what the system is, why it is designed this way, and which rules implementation must preserve.
 
 ## Document status
 
@@ -13,17 +13,18 @@ When implementation reveals new evidence, update the relevant document and add o
 ## Recommended reading order
 
 1. [Product brief](product-brief.md) — users, problem, scope, use cases, rules, and release acceptance.
-2. [Glossary](glossary.md) — the precise language used by the product and codebase.
-3. [Quality attributes](quality-attributes.md) — measurable correctness, security, reliability, and maintainability goals.
-4. [Software architecture](architecture/software-architecture.md) — architecture style, module boundaries, dependencies, runtime behavior, and evolution.
-5. [Data architecture](architecture/data-architecture.md) — money representation, ledger model, ownership, consistency, indexing, and migrations.
-6. [Security architecture](architecture/security-architecture.md) — trust boundaries, assets, authorization, threat model, and secure operations.
-7. [Architecture diagrams](architecture/diagrams.md) — visual views of context, containers, modules, transactions, data, security, and deployment.
-8. [Architecture decisions](adr/README.md) — decisions, alternatives, consequences, and review triggers.
+2. [Delivery roadmap](roadmap.md) — implementation milestones, current status, and completion evidence.
+3. [Glossary](glossary.md) — the precise language used by the product and codebase.
+4. [Quality attributes](quality-attributes.md) — measurable correctness, security, reliability, and maintainability goals.
+5. [Software architecture](architecture/software-architecture.md) — architecture style, module boundaries, dependencies, runtime behavior, and evolution.
+6. [Data architecture](architecture/data-architecture.md) — money representation, ledger model, ownership, consistency, indexing, and migrations.
+7. [Security architecture](architecture/security-architecture.md) — trust boundaries, assets, authorization, threat model, and secure operations.
+8. [Architecture diagrams](architecture/diagrams.md) — visual views of context, containers, modules, transactions, data, security, and deployment.
+9. [Architecture decisions](adr/README.md) — decisions, alternatives, consequences, and review triggers.
 
 ## Hands-on implementation guides
 
-- [01 — Create the project foundation yourself](tutorials/01-project-foundation.md) — solution creation, project references, complete starter snippets, Development-only Scalar, and HTTP functional tests. This is a manual walkthrough, not generated application code or a claim of a tested implementation.
+- [01 — Project foundation](tutorials/01-project-foundation.md) — solution creation, project references, Development-only Scalar, and HTTP functional tests.
 
 ## Source-of-truth map
 
@@ -37,7 +38,7 @@ When implementation reveals new evidence, update the relevant document and add o
 | Which database/provider should implementation use? | `adr/0006-use-postgresql-and-npgsql.md` |
 | How is the system protected? | `architecture/security-architecture.md` |
 | Why was a major choice made? | `adr/` |
-| What should be built and learned next? | Root `README.md` |
+| What should be delivered next? | `roadmap.md` |
 
 ## Documentation rules
 
@@ -55,7 +56,7 @@ When implementation reveals new evidence, update the relevant document and add o
 
 Review this documentation:
 
-- before the first application project is created;
+- before each major implementation milestone begins;
 - before each roadmap phase begins;
 - whenever a domain invariant or transaction boundary changes;
 - before a public release or deployment;

@@ -974,7 +974,7 @@ Do not introduce deliberate failures into a shared or deployed environment. Thes
 
 ## 17. What to do immediately after this guide
 
-Stop after the foundation and review it before adding business features. Continue through the existing [roadmap](../../README.md#step-by-step-roadmap): finish the HTTP fundamentals, establish PostgreSQL persistence, then build the domain and authenticated customer/wallet workflows in their documented order.
+Stop after the foundation and review it before adding business features. Continue through the [delivery roadmap](../roadmap.md): finish the HTTP fundamentals, establish PostgreSQL persistence, then build the domain and authenticated customer/wallet workflows in their documented order.
 
 Useful next review request:
 

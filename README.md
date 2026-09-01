@@ -151,6 +151,7 @@ The current functional test starts the API in memory, sends an HTTP request to t
 Detailed decisions and requirements live under [`docs`](docs/README.md):
 
 - [Product brief](docs/product-brief.md)
+- [Delivery roadmap](docs/roadmap.md)
 - [Software architecture](docs/architecture/software-architecture.md)
 - [Data architecture](docs/architecture/data-architecture.md)
 - [Security architecture](docs/architecture/security-architecture.md)
