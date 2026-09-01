@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+  </Folder>
   <Project Path="src/FintechBackend.Api/FintechBackend.Api.csproj" />
   <Project Path="src/Modules/Customers/FintechBackend.Customers/FintechBackend.Customers.csproj" Id="da780eba-c2ce-401f-9768-c0524058a2be" />
   <Project Path="tests/FintechBackend.FunctionalTests/FintechBackend.FunctionalTests.csproj" Id="0e411c39-7f18-4364-8d2f-51e20860e2c8" />
