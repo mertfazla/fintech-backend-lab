@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+
+      - name: Restore dependencies
+        run: dotnet restore FinTech.slnx
+
+      - name: Verify formatting
+        run: dotnet format FinTech.slnx --verify-no-changes --no-restore
+
+      - name: Build
+        run: dotnet build FinTech.slnx --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test FinTech.slnx --configuration Release --no-build --no-restore --logger "console;verbosity=minimal"
