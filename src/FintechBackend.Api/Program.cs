@@ -14,6 +14,21 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+app.Use(async (context, next) =>
+{
+    var correlationId = context.TraceIdentifier;
+
+    context.Response.OnStarting(() =>
+    {
+        context.Response.Headers["X-Correlation-ID"] =
+            correlationId;
+
+        return Task.CompletedTask;
+    });
+
+    await next(context);
+});
+
 app.UseExceptionHandler();
 app.UseStatusCodePages();
 
